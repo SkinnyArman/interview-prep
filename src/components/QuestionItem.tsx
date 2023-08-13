@@ -38,9 +38,12 @@ const FAQItem: React.FC<props> = (props) => {
           isExpanded ? "h-auto" : "h-0"
         }`}
       >
-        <div className="bg-white border border-gray-300 rounded-md shadow-md text-gray-800 px-4 py-3 mt-2">
-          {props.answer}
-        </div>
+        <div
+          className="bg-white border border-gray-300 rounded-md shadow-md text-gray-800 px-4 py-3 mt-2"
+          dangerouslySetInnerHTML={{
+            __html: props.answer,
+          }}
+        ></div>
       </div>
     </div>
   );
