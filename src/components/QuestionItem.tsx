@@ -16,11 +16,11 @@ const FAQItem: React.FC<props> = (props) => {
   return (
     <div className="w-full mb-4">
       <button
-        className="flex items-center justify-between w-full bg-gray-200 text-gray-800 px-4 py-3 rounded-md text-left focus:outline-none transition-all duration-300 ease-in-out transform hover:bg-gray-300"
+        className="flex justify-end items-center w-full bg-gray-200 text-gray-800 px-4 py-3 rounded-md focus:outline-none transition-all duration-300 ease-in-out transform hover:bg-gray-300"
         onClick={toggleExpand}
       >
         <span className="font-semibold">{props.question}</span>
-        <svg
+        {/* <svg
           className={`w-4 h-4 transition-transform ${
             isExpanded ? "transform rotate-180" : ""
           }`}
@@ -31,7 +31,7 @@ const FAQItem: React.FC<props> = (props) => {
             className="fill-current"
             d="M16.25 10.25L12 14.5L7.75 10.25L6.34 11.66L12 17.31L17.66 11.66L16.25 10.25Z"
           />
-        </svg>
+        </svg> */}
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ${

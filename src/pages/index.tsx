@@ -22,7 +22,7 @@ export default function Page({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   console.log(repo);
   return (
-    <div className="mt-10 mx-auto w-1/2">
+    <div className="mt-10 mx-auto w-5/6 md:w-1/2">
       {repo.data.map((repo) => (
         <QuestionItem
           key={repo.id}
